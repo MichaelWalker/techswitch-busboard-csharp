@@ -25,5 +25,10 @@ namespace BusBoard
             var response = _restClient.Get<List<ArrivalPrediction>>(request);
             return response.Data;
         }
+
+        public IEnumerable<BusStop> FindBusStopsNearLocation(double latitude, double longitude)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
