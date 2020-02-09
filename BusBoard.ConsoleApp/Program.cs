@@ -10,7 +10,7 @@ namespace BusBoard
             
             var stopPointId = UserInputManager.GetStopPointId();
             var nextBuses = tflApiClient.FetchArrivalPredictionsForStopPoint(stopPointId);
-            Console.WriteLine($"The stop code is {stopPointId}");
+            BusBoardPrinter.PrintArrivalPredictions(nextBuses);
         }
     }
 }
