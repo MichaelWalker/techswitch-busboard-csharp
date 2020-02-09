@@ -6,7 +6,8 @@ namespace BusBoard
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var stopPointId = UserInputManager.GetStopPointId();
+            Console.WriteLine($"The stop code is {stopPointId}");
         }
     }
 }
